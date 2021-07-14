@@ -65,6 +65,7 @@ header i{
     height: 3072px;
     width: 100%;
     background-color: #FFFFFF;
+    border: 1px solid rgb(0, 98, 255);
 }
 #PlayerDetails-Section{
     margin: 70px 0px 0px 240px;
@@ -108,18 +109,125 @@ header i{
 
 
 
-
-
 /*************************
 ****Player Details Section Ends
 **************************/
 
 
+hr{
+    width: 85%;
+    margin-top: 10%;
+}
+
+/*************************
+****Highlights Section Starts
+**************************/
+
+#Highlightes-Section{
+    margin-top: 10%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: 1px solid red;
+    width: 80%;
+}
+
+iframe{
+    margin-top: 5%;
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
+}
+
+#Highlight-Details{
+    margin-left: 17%;
+}
+#Highlightes-Section h1{
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(236, 25, 25);
+}
+
+#Highlightes-Section h3{
+    width: 70%;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(55, 55, 58);
+}
+#Highlight-Details button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0px solid #E02C6D;
+    text-decoration: none;
+}
+
+/*************************
+****Highlights Section Ends
+**************************/
 
 
+/*************************
+****News Section Starts
+**************************/
 
 
+#FootBall-News-Details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 10%;
+    border: 1px solid rgb(238, 255, 0);
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
 
+.Each-News{
+   display: flex;
+   justify-content: center;
+   border: 1px solid rgb(0, 255, 55);
+   border-radius: 6px;
+   box-shadow: 0px 0px 20px rgb(148, 148, 148);
+   background-color: rgb(237, 237, 241);
+}
+
+.Each-News a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 255);
+}
+
+.Each-News h1{
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin-top: -2%;
+}
+.Each-News h3{
+    font-size: 15px;
+    font-weight: initial;
+    color: rgb(59, 54, 54);
+    margin-top: -7%;
+}
+
+.Each-News img{
+    width: 200px;
+    height: 130px;
+  
+}
+
+.News-Details{
+    margin-left: 5%;
+}
+
+.News-Details h2{
+    font-size: 18px;
+    color: rgb(238, 218, 43);
+}
+
+/*************************
+****News Section Ends
+**************************/
 
 
 
