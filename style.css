@@ -16,6 +16,14 @@ header{
     width: 100%;
 }
 
+@keyframes colorChanging {
+    from{
+        color: rgb(27, 25, 29);
+    }
+    to{
+        color: rgb(255, 255, 255);
+    }
+}
 header h1{
     width: 485px;
     height: 230px;
@@ -24,7 +32,15 @@ header h1{
     color: #FFFFFF;
     margin-left: 156px;
     margin-top: 187px;
+
+    animation-name: colorChanging;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
 }
+/* header h1:hover{
+    animation: colorChanging 1s ease 0.5 infinite alternate;
+} */
 
 header img{
     width: 556.01px;
@@ -62,7 +78,7 @@ header i{
 **************************/
 
 #Player-Section{
-    height: 3072px;
+    height: 3372px;
     width: 100%;
     background-color: #FFFFFF;
     border: 1px solid rgb(0, 98, 255);
@@ -133,12 +149,14 @@ hr{
 }
 
 iframe{
-    margin-top: 5%;
+ 
+    width: 100%;
+    height: 100%;
     box-shadow: 0px 0px 40px rgb(0, 0, 0);
 }
 
 #Highlight-Details{
-    margin-left: 17%;
+    margin-left: 32%;
 }
 #Highlightes-Section h1{
     font-size: 26px;
@@ -170,7 +188,12 @@ iframe{
 /*************************
 ****News Section Starts
 **************************/
-
+#News-Section>h1{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
 
 #FootBall-News-Details{
     display: grid;
@@ -178,9 +201,10 @@ iframe{
     grid-column-gap: 10%;
     border: 1px solid rgb(238, 255, 0);
     width: 80%;
-    margin-top: 10%;
+    margin-top: 4%;
     margin-left: 10%;
 }
+
 
 .Each-News{
    display: flex;
@@ -189,6 +213,11 @@ iframe{
    border-radius: 6px;
    box-shadow: 0px 0px 20px rgb(148, 148, 148);
    background-color: rgb(237, 237, 241);
+}
+
+.Each-News:hover{
+    transform: scale(1.05);
+     transition: transform 0.4s ease-in; 
 }
 
 .Each-News a{
@@ -200,7 +229,7 @@ iframe{
 .Each-News h1{
     font-size: 25px;
     font-weight: 900;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
     margin-top: -2%;
 }
 .Each-News h3{
@@ -228,6 +257,49 @@ iframe{
 /*************************
 ****News Section Ends
 **************************/
+
+
+/*************************
+****Footer Starts
+**************************/
+footer{
+    border:1px solid lightsalmon;
+}
+
+footer img{
+    margin-left: 33%;
+    height: 40%;
+    width:30%;
+}
+
+#Footer-Logo{
+    width: 17%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+footer i{
+    color: rgb(163, 163, 163);
+    font-size: 170%;
+    /* margin-left: 3%; */
+}
+
+footer h1{
+    margin-left: 40%;
+    font-size: 130%;
+}
+/*************************
+****Footer Ends
+**************************/
+
+
+
+
+
 
 
 
@@ -266,8 +338,8 @@ iframe{
     }
     #Player-Section{
         justify-content: center;
-        height: 6030px;
-        border: 1px solid rgb(0, 98, 255);
+        height: 8160px;
+        border: 1px solid rgb(0, 255, 128);
     }
     #PlayerDetails-Section{
         display: grid;
@@ -283,7 +355,36 @@ iframe{
         justify-content: center;
         /* margin: 0% 0% 0% 2%; */
     }
-   
+
+    #Highlightes-Section{
+        
+       
+        grid-template-columns: repeat(1,1fr);
+        border: 1px solid red;
+       
+    }
+ 
+
+    #FootBall-News-Details{
+        grid-template-columns: repeat(1,1fr);
+        border: 1px solid rgb(0, 17, 255);
+       
+    }
+    .Each-News img{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .Each-News{
+       display: block;
+       margin-top: 15%;
+    }
+    footer img{
+        width: 60%;
+        margin-left: 20%;
+    }
+    footer h1{
+        margin-left: 20%;
+    }
    
 }
 
